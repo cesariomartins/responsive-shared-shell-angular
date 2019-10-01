@@ -1,6 +1,10 @@
 <div>
-    <p>shell works!</p>
-    
+    <p>menu</p>
+    <div *ngIf="(isHandset$ | async)">
+        is handset
+    </div>
+
     <!-- TRANSCLUSION -->
     <ng-content></ng-content>
+    <p>rodape</p>
 </div>
