@@ -1,0 +1,7 @@
+
+<div *ngIf="(isHandset$ | async); else elseBlock">
+        <app-checkout-with-steps></app-checkout-with-steps>
+    </div>
+    <ng-template #elseBlock>
+        <app-checkout-without-steps></app-checkout-without-steps>
+</ng-template>
